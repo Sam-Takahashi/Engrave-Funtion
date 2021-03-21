@@ -43,7 +43,8 @@
   text-align: center;
 }
 #innerText {
-  font-size: 3rem;
+  font-size: 2rem;
+  text-transform: uppercase;
   z-index: 100;
 }
 
@@ -53,7 +54,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 2rem;
-  height: 300px;
+  min-height: 300px;
   margin: 0 auto;
   background-color: rgb(235, 235, 235);
 }
@@ -63,9 +64,10 @@
 .inputer {
   width: 300px;
   height: 50px;
-  padding: 5px 15px;
+  padding: 15px 25px;
   border: solid 1px rgb(218, 218, 218);
   border-radius: 5px;
+  margin-top: 1rem;
 }
 #current {
   max-width: 40px;
@@ -78,4 +80,32 @@
   width: 30px;
   height: 30px;
   margin: 10px;
+}
+
+.btn {
+  margin-top: 1rem;
+  min-width: 250px;
+  height: 50px;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.save {
+  margin-top: 50px;
+  background: rgb(59, 156, 232);
+  background: linear-gradient(
+    180deg,
+    rgba(59, 156, 232, 1) 30%,
+    rgba(8, 118, 205, 1) 100%
+  );
+  color: #fff;
+}
+.save:hover {
+  filter: brightness(1.1);
+}
+.cancel {
+  color: rgba(8, 118, 205, 1);
 }
