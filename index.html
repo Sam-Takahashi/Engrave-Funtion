@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engrave Function</title>
+    <link rel="stylesheet" href="css/style.css">
+
+<body >
+    <div id='app'>
+        <div class="container_one">
+            <div class="relative_container">
+                <img class="main_img" src="img/case.jpg" alt="">
+                <!-- <div v-for="emoji in emojis" :key="emoji.id">{{ this.image }}</div> -->
+                    <!-- absolute position center image -->
+                <div class="absolute_container" >
+
+                    <img id="current" src="img/one.svg" width="107" height="98">
+
+                    <!-- absolute position text -->
+                    <div class="text_container">
+                        <p id="innerText">{{message}}</p>   
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_two">
+            
+                <h5>クリックで絵文字を追加したり、テキストや数字を入力したり。複数の絵文字とテキストを組み合わせることもできます。</h5>
+                <!-- <textarea id="myTextarea" maxlength="10" placeholder="Write 10"></textarea>
+                <button type="button" onclick="myFunction()">Try it</button> -->
+                <input 
+                class="inputer"
+                type="text" 
+                v-model="message" 
+                maxlength="10" 
+                placeholder="10 characters maximum">
+                </input>
+                
+                <div id="emo_contain" class="imgs">
+                    <img src="img/one.svg" alt="">
+                    <img src="img/two.svg" alt="">
+                    <img src="img/three.svg" alt="">
+                    <img src="img/four.svg" alt="">
+                    <img src="img/five.svg" alt="">
+                    <img src="img/six.svg" alt="">
+                    <img src="img/seven.svg" alt="">
+                </div>
+            
+        </div>
+    </div>
+    
+    
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+<script src="js/main.js"></script>
+</html>
